@@ -19,7 +19,4 @@ df2 = pd.read_csv(r'/home/ricardo/desafios/read-large-files/convertcsv2.csv')
 
 df = pd.concat([df1,df2], axis=1, join='inner').sort_index()
 
-
 print(df.head())
-df.to_csv('df.csv')
-
